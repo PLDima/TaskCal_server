@@ -1,0 +1,23 @@
+[versions]
+kotlin = "2.4.20"
+logback = "1.6.3"
+exposed = "1.6.1"
+flyway = "13.12.1"
+hikari = "7.1.0"
+postgresql = "42.7.14"
+h2 = "2.5.252"
+
+[libraries]
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+exposed-javaTime = { module = "org.jetbrains.exposed:exposed-java-time", version.ref = "exposed" }
+flyway-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+flyway-postgresql = { module = "org.flywaydb:flyway-database-postgresql", version.ref = "flyway" }
+hikari = { module = "com.zaxxer:HikariCP", version.ref = "hikari" }
+postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
+h2 = { module = "com.h2database:h2", version.ref = "h2" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
